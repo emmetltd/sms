@@ -4,7 +4,7 @@ namespace Emmetltd;
  * 埃米特短信接口
  * @author 福来<115376835@qq.com>
  * 示例
- *     $alisms = new \Common\Model\Alisms($accessKeyId,$accessKeySecret);
+ *     	   $sms = new \Emmetltd\EmmetSms($accessKeyId,$accessKeySecret,$signName,$OutId);
  *	   $mobile = '18788830181';
  *	   $code   = 'SMS_36225243';
  *	   $paramString = '{"code":"344556"}';
@@ -13,12 +13,12 @@ namespace Emmetltd;
  *
  */
 class EmmetSms{
-	private   $config = array(
-                  'Format'  =>'json', //返回值的类型，支持JSON与XML。默认为XML
-                  'Version' =>'2017-05-25', //API版本号，为日期形式：YYYY-MM-DD，本版本对应为2016-09-27
-                  'SignatureMethod' =>'HMAC-SHA1', //签名方式，目前支持HMAC-SHA1
-                  'SignatureVersion'=>'1.0',
-			   );
+       private    $config = [
+                  	'Format'  =>'json', //返回值的类型，支持JSON与XML。默认为XML
+                  	'Version' =>'2017-05-25', //API版本号，为日期形式：YYYY-MM-DD，本版本对应为2017-05-25
+                  	'SignatureMethod' =>'HMAC-SHA1', //签名方式，目前支持HMAC-SHA1
+                  	'SignatureVersion'=>'1.0',
+		   ];
 	private    $accessKeySecret;
 	private    $OutId;
 	private    $http = 'http://api.dev.alisms.vip/sms/v1/';		//短信接口
@@ -34,7 +34,7 @@ class EmmetSms{
 	function __construct($accessKeyId,$accessKeySecret,$signName,$OutId){
 		$this->config['AccessKeyId'] = $accessKeyId;
 		$this->AccessKeySecret = $accessKeySecret;
-        $this->signName = $signName;
+      	        $this->signName = $signName;
 		$this->OutId = $OutId;
 	} 
 	
