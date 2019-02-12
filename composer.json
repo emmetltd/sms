@@ -1,0 +1,24 @@
+{
+    "name": "emmetltd/sms",
+    "description": "emmetltd sms",
+    "type": "library",
+	"version":"1.0.0",
+    "keywords": [
+        "aliyun",
+        "sms",
+        "emmetltd"
+    ],
+    "homepage": "http://www.alisms.vip",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "yaofulai",
+            "email": "115376835@qq.com"
+        }
+    ]
+    "autoload": {
+        "psr-4": {
+            "Emmetltd": "lib/"
+        }
+    }
+}
