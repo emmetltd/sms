@@ -8,7 +8,7 @@ class Sign{
 	 * @param $ 
 	 * @return Respond
 	 */	
-	private function computeSignature($parameters, $accessKeySecret){
+	function computeSignature($parameters, $accessKeySecret){
 	    ksort($parameters);
 	    $canonicalizedQueryString = '';
 	    foreach($parameters as $key => $value){

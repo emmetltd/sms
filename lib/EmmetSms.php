@@ -36,7 +36,7 @@ class EmmetSms extends Check{
 		$this->accessKeySecret = $accessKeySecret;
 		$this->config['accessKeyId'] = $accessKeyId;
 		
-		$this->signHelper = new signHelper();		
+		$this->signHelper = new Sign();		
 		$this->httpHelper = new HttpHelper();
 	}
 	
@@ -45,7 +45,7 @@ class EmmetSms extends Check{
 	 * @param $action API类型
 	 * @return Respond
 	 */	
-	private function setAction($action){
+    function setAction($action){
 		$this->apiParams['Action'] = $action;
 		return $this;
 	}
@@ -55,7 +55,7 @@ class EmmetSms extends Check{
 	 * @param $config
 	 * @return Respond
 	 */	
-	private function param($param){
+	function param($param){
 		$param_data = $this->completeParam($this->apiParams['Action'],$param);
 		if($param_data){
 			$this->apiParams = $this->config;
@@ -76,7 +76,7 @@ class EmmetSms extends Check{
 	 * @param $ 
 	 * @return Respond
 	 */	
-	private function request(){
+	function request(){
 		return json_decode($this->httpHelper->curl($this->apiUrl,$this->apiParams),true);
 	}	
 }

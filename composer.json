@@ -2,7 +2,7 @@
     "name": "emmetltd/sms",
     "description": "emmetltd sms",
     "type": "library",
-    "version":"1.0.1",
+	"version":"1.0.0",
     "keywords": [
         "aliyun",
         "sms",
@@ -15,12 +15,12 @@
             "name": "yaofulai",
             "email": "115376835@qq.com"
         }
-    ],
+    ]
     "autoload": {
         "psr-4": {
-            "Emmetltd\\": "lib/",
-            "Emmetltd\\http\\": "http/",
-            "Emmetltd\\tools\\": "tools/"	
+            "Emmetltd//": "lib/",
+            "Emmetltd//http//": "http/",
+            "Emmetltd//tools//": "tools/"	
         }
     }
 }

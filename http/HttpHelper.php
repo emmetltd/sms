@@ -7,7 +7,7 @@ class HttpHelper{
 	 * @param string $url
 	 * @param array $post_data
 	 */
-    private function curl($url = '', $post_data = array()) {
+    function curl($url = '', $post_data = array()) {
         if (empty($url) || empty($post_data)) {
             return false;
         }
