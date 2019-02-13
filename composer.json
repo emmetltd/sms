@@ -15,10 +15,12 @@
             "name": "yaofulai",
             "email": "115376835@qq.com"
         }
-    ],
+    ]
     "autoload": {
         "psr-4": {
-            "Emmetltd\\": "lib/"
+            "Emmetltd//": "lib/",
+            "Emmetltd//http//": "http/",
+            "Emmetltd//tools//": "tools/"	
         }
     }
 }
