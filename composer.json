@@ -2,7 +2,7 @@
     "name": "emmetltd/sms",
     "description": "emmetltd sms",
     "type": "library",
-    "version":"1.0.1.0",
+    "version":"1.0.1",
     "keywords": [
         "aliyun",
         "sms",
