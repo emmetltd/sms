@@ -18,9 +18,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Emmetltd//": "lib/",
-            "Emmetltd//http//": "http/",
-            "Emmetltd//tools//": "tools/"	
+            "Emmetltd\\": "lib/",
+            "Emmetltd\\http\\": "http/",
+            "Emmetltd\\tools\\": "tools/"	
         }
     }
 }
